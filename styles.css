@@ -1,14 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 #todo-app {
+    margin: 20px auto;
     width: 100%;
     max-width: 400px;
     background: #fff;
@@ -18,7 +16,7 @@ body {
 }
 
 #task-input {
-    width: 95%;
+    width: 92%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -52,6 +50,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    word-break: break-word; 
 }
 
 .remove-btn {
@@ -66,3 +65,13 @@ li {
 .remove-btn:hover {
     background-color: #d9534f;
 }
+
+
+
+    @media (max-width: 768px){
+        #todo-app {
+            width: 80%;
+            padding: 20pxpx;
+    
+        }    
+    }
